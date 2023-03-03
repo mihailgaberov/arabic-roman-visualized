@@ -7,13 +7,12 @@ function App() {
   const [arabicNumber, setArabicNumber] = createSignal('')
 
   const convert = (event) => {
-    console.log(">>> event: ", event.data)
-    const num = event.data;
+    const num = event.currentTarget.value;
     if (!isNaN(num)) {
       return setRomanNumber(convertArabicToRoman(num));
     } else {
-      setArabicNumber('')
       alert('You must enter a valid number.')
+      setArabicNumber('')
     }
   }
 
