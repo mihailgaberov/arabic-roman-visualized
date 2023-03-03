@@ -20,7 +20,7 @@ function App() {
     return (
         <div class={styles.app}>
             <input name='arabic' ref={inputRef}
-                   onInput={(event) => convert(event)}/>
+                   onInput={convert}/>
             <input name='roman' value={romanNumber()}/>
         </div>
     );
