@@ -1,30 +1,19 @@
 {
-  "name": "arabic-roman-visualized",
-  "version": "1.0.0",
-  "description": "A demo SolidJS app that's visualizing the workings of an algorithm for converting arabic to roman numbers.",
-  "main": "index.js",
+  "name": "vite-template-solid",
+  "version": "0.0.0",
+  "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mihailgaberov/arabic-roman-visualized.git"
-  },
-  "keywords": [
-    "SolidJS",
-    "algorithm",
-    "arabic",
-    "roman",
-    "numbers"
-  ],
-  "author": "Mihail Gaberov <m1h1lbg3r0v@proton.me>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mihailgaberov/arabic-roman-visualized/issues"
+  "devDependencies": {
+    "vite": "^4.1.1",
+    "vite-plugin-solid": "^2.5.0"
   },
-  "homepage": "https://github.com/mihailgaberov/arabic-roman-visualized#readme",
   "dependencies": {
-    "babel-preset-solid": "^1.6.10",
-    "solid-js": "^1.6.11"
+    "solid-js": "^1.6.10"
   }
 }
