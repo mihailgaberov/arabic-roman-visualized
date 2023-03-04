@@ -1,0 +1,22 @@
+.container {
+  height: 100vh;
+  background-color: #32363f;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+
+  .controls {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 1.4em;
+    color: lightgray;
+    text-align: center;
+  }
+}

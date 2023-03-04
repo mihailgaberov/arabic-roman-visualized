@@ -1,6 +1,8 @@
 import {convertArabicToRoman} from "../lib/converter";
-import styles from './App.module.css';
+import styles from './App.module.scss';
 import {createSignal} from "solid-js";
+import { AnimatedDisplay } from "./components/AnimatedDisplay";
+import { Header } from "./components/Header";
 
 function App() {
     const [romanNumber, setRomanNumber] = createSignal('');
@@ -18,11 +20,17 @@ function App() {
     }
 
     return (
-        <div class={styles.app}>
-            <input name='arabic' ref={inputRef}
-                   onInput={convert}/>
-            <input name='roman' value={romanNumber()}/>
-        </div>
+        <>
+            <Header />
+            <div className={styles.container}>
+                <h2 className={styles.title}>Convert Arabic to Roman Numerals</h2>
+                <div className={styles.controls}>
+                    <input placeholder='Enter arabic number here' name='arabic' ref={inputRef}
+                           onInput={convert}/>
+                    <AnimatedDisplay romanNumberGetter={romanNumber} />
+                </div>
+            </div>
+        </>
     );
 }
 
