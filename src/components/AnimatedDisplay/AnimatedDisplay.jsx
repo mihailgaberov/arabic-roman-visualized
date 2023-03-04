@@ -1,5 +1,7 @@
+import styles from './AnimatedDisplay.module.scss';
+
 export function AnimatedDisplay({romanNumberGetter}) {
-  return (
-      <input name='roman' value={romanNumberGetter()}/>
-  );
+
+
+  return <h1 className={styles.container}>{romanNumberGetter()}</h1>
 }

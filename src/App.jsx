@@ -4,16 +4,17 @@ import {createSignal} from "solid-js";
 import { AnimatedDisplay } from "./components/AnimatedDisplay";
 import { Header } from "./components/Header";
 
+const NUMBER_OF_DIGITS = 4;
 function App() {
     const [romanNumber, setRomanNumber] = createSignal('');
     let inputRef = null;
 
     const convert = (event) => {
         const num = event.currentTarget.value;
-        if (!isNaN(num)) {
+        if (!isNaN(num) && num.length <= NUMBER_OF_DIGITS && num <= 4999) {
             return setRomanNumber(convertArabicToRoman(num));
         } else {
-            alert('You must enter a valid number.');
+            alert('You must enter a valid number and less than 4999.');
             inputRef.value = '';
             setRomanNumber('');
         }
@@ -25,10 +26,11 @@ function App() {
             <div className={styles.container}>
                 <h2 className={styles.title}>Convert Arabic to Roman Numerals</h2>
                 <div className={styles.controls}>
-                    <input className={styles.arabicInput} placeholder='Enter arabic number here' name='arabic' ref={inputRef}
+                    <input placeholder='Enter arabic number here' name='arabic' ref={inputRef}
                            onInput={convert}/>
-                    <AnimatedDisplay romanNumberGetter={romanNumber} />
+                    <label>Accepts inputs from 1 - 4999</label>
                 </div>
+                <AnimatedDisplay romanNumberGetter={romanNumber} />
             </div>
         </>
     );
