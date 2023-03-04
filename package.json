@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@motionone/solid": "^10.15.5",
+    "@solid-primitives/keyed": "^1.1.8",
     "sass": "^1.58.3",
     "solid-js": "^1.6.10"
   }
