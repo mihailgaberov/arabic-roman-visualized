@@ -3,7 +3,19 @@
   margin-top: 3rem;
 
   .romanNumerals {
-    color: gold;
+    color: white;
     font-size: 2.725em;
+    text-align: center;
+    animation: glow 2s ease-in-out infinite alternate;
+    z-index: 2;
+  }
+
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e69600, 0 0 20px #e6b800, 0 0 25px #e60073, 0 0 30px #e60073, 0 0 35px #e60073;
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 15px #ff7c4d, 0 0 20px #ff774d, 0 0 25px #ffe74d, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
+    }
   }
 }
