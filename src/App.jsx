@@ -25,7 +25,7 @@ function App() {
             <div className={styles.container}>
                 <h2 className={styles.title}>Convert Arabic to Roman Numerals</h2>
                 <div className={styles.controls}>
-                    <input placeholder='Enter arabic number here' name='arabic' ref={inputRef}
+                    <input className={styles.arabicInput} placeholder='Enter arabic number here' name='arabic' ref={inputRef}
                            onInput={convert}/>
                     <AnimatedDisplay romanNumberGetter={romanNumber} />
                 </div>
