@@ -3,6 +3,7 @@ import styles from './App.module.scss';
 import {createSignal} from "solid-js";
 import { AnimatedDisplay } from "./components/AnimatedDisplay";
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 
 const NUMBER_OF_DIGITS = 4;
 function App() {
@@ -31,6 +32,7 @@ function App() {
                     <label>Accepts inputs from 1 - 4999</label>
                 </div>
                 <AnimatedDisplay romanNumberGetter={romanNumber} />
+                <Footer />
             </div>
         </>
     );

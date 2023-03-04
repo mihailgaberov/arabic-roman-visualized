@@ -1,7 +1,8 @@
 {
   "name": "vite-template-solid",
-  "version": "0.0.0",
-  "description": "",
+  "version": "1.0.0",
+  "description": "A demo SolidJS app that's visualizing the workings of an algorithm for converting arabic to roman numbers.",
+  "author": "Mihail Gaberov",
   "scripts": {
     "start": "vite",
     "dev": "vite",
