@@ -7,4 +7,5 @@ A demo SolidJS app that's visualizing the workings of an algorithm for convertin
 - SASS / CSS Modules
 
 ### Screenshots
+![Animated View](https://github.com/mihailgaberov/arabic-roman-visualized/blob/main/animated-screenshot.gif)
 ![Mobile View](https://github.com/mihailgaberov/arabic-roman-visualized/blob/main/screenshot.png)
